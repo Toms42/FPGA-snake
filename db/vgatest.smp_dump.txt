@@ -1,0 +1,13 @@
+
+State Machine - |vgatest|snes_input:snes_in|state
+Name state.idle state.reading state.latching 
+state.latching 0 0 0 
+state.idle 1 0 1 
+state.reading 0 1 1 
+
+State Machine - |vgatest|snake:snake|direction
+Name direction.right direction.left direction.down direction.up 
+direction.up 0 0 0 0 
+direction.down 0 0 1 1 
+direction.left 0 1 0 1 
+direction.right 1 0 0 1 

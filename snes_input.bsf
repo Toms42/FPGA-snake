@@ -1,0 +1,142 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 160 288)
+	(text "snes_input" (rect 5 0 47 12)(font "Arial" ))
+	(text "inst" (rect 8 256 20 268)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clock" (rect 0 0 20 12)(font "Arial" ))
+		(text "clock" (rect 21 27 41 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "data" (rect 0 0 16 12)(font "Arial" ))
+		(text "data" (rect 21 43 37 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 144 32)
+		(output)
+		(text "up" (rect 0 0 9 12)(font "Arial" ))
+		(text "up" (rect 114 27 123 39)(font "Arial" ))
+		(line (pt 144 32)(pt 128 32)(line_width 1))
+	)
+	(port
+		(pt 144 48)
+		(output)
+		(text "down" (rect 0 0 20 12)(font "Arial" ))
+		(text "down" (rect 103 43 123 55)(font "Arial" ))
+		(line (pt 144 48)(pt 128 48)(line_width 1))
+	)
+	(port
+		(pt 144 64)
+		(output)
+		(text "left" (rect 0 0 11 12)(font "Arial" ))
+		(text "left" (rect 112 59 123 71)(font "Arial" ))
+		(line (pt 144 64)(pt 128 64)(line_width 1))
+	)
+	(port
+		(pt 144 80)
+		(output)
+		(text "right" (rect 0 0 16 12)(font "Arial" ))
+		(text "right" (rect 107 75 123 87)(font "Arial" ))
+		(line (pt 144 80)(pt 128 80)(line_width 1))
+	)
+	(port
+		(pt 144 96)
+		(output)
+		(text "a" (rect 0 0 4 12)(font "Arial" ))
+		(text "a" (rect 119 91 123 103)(font "Arial" ))
+		(line (pt 144 96)(pt 128 96)(line_width 1))
+	)
+	(port
+		(pt 144 112)
+		(output)
+		(text "b" (rect 0 0 4 12)(font "Arial" ))
+		(text "b" (rect 119 107 123 119)(font "Arial" ))
+		(line (pt 144 112)(pt 128 112)(line_width 1))
+	)
+	(port
+		(pt 144 128)
+		(output)
+		(text "x" (rect 0 0 4 12)(font "Arial" ))
+		(text "x" (rect 119 123 123 135)(font "Arial" ))
+		(line (pt 144 128)(pt 128 128)(line_width 1))
+	)
+	(port
+		(pt 144 144)
+		(output)
+		(text "y" (rect 0 0 5 12)(font "Arial" ))
+		(text "y" (rect 118 139 123 151)(font "Arial" ))
+		(line (pt 144 144)(pt 128 144)(line_width 1))
+	)
+	(port
+		(pt 144 160)
+		(output)
+		(text "start" (rect 0 0 17 12)(font "Arial" ))
+		(text "start" (rect 106 155 123 167)(font "Arial" ))
+		(line (pt 144 160)(pt 128 160)(line_width 1))
+	)
+	(port
+		(pt 144 176)
+		(output)
+		(text "sel" (rect 0 0 10 12)(font "Arial" ))
+		(text "sel" (rect 113 171 123 183)(font "Arial" ))
+		(line (pt 144 176)(pt 128 176)(line_width 1))
+	)
+	(port
+		(pt 144 192)
+		(output)
+		(text "l" (rect 0 0 1 12)(font "Arial" ))
+		(text "l" (rect 122 187 123 199)(font "Arial" ))
+		(line (pt 144 192)(pt 128 192)(line_width 1))
+	)
+	(port
+		(pt 144 208)
+		(output)
+		(text "r" (rect 0 0 3 12)(font "Arial" ))
+		(text "r" (rect 120 203 123 215)(font "Arial" ))
+		(line (pt 144 208)(pt 128 208)(line_width 1))
+	)
+	(port
+		(pt 144 224)
+		(output)
+		(text "dclock" (rect 0 0 24 12)(font "Arial" ))
+		(text "dclock" (rect 99 219 123 231)(font "Arial" ))
+		(line (pt 144 224)(pt 128 224)(line_width 1))
+	)
+	(port
+		(pt 144 240)
+		(output)
+		(text "dlatch" (rect 0 0 22 12)(font "Arial" ))
+		(text "dlatch" (rect 101 235 123 247)(font "Arial" ))
+		(line (pt 144 240)(pt 128 240)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 128 256)(line_width 1))
+	)
+)

@@ -1,0 +1,53 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "hs",
+					"strict" : false
+				},
+				{
+					"name" : "vs",
+					"strict" : false
+				},
+				{
+					"name" : "gpin0",
+					"strict" : false
+				},
+				{
+					"name" : "gpin1",
+					"strict" : false
+				},
+				{
+					"name" : "gpin2",
+					"strict" : false
+				},
+				{
+					"name" : "gpin3",
+					"strict" : false
+				},
+				{
+					"name" : "bpin0",
+					"strict" : false
+				},
+				{
+					"name" : "bpin1",
+					"strict" : false
+				},
+				{
+					"name" : "bpin2",
+					"strict" : false
+				},
+				{
+					"name" : "bpin3",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
