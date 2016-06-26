@@ -12,6 +12,46 @@
 					"strict" : false
 				},
 				{
+					"name" : "right",
+					"strict" : false
+				},
+				{
+					"name" : "left",
+					"strict" : false
+				},
+				{
+					"name" : "down",
+					"strict" : false
+				},
+				{
+					"name" : "up",
+					"strict" : false
+				},
+				{
+					"name" : "dlatch",
+					"strict" : false
+				},
+				{
+					"name" : "dclock",
+					"strict" : false
+				},
+				{
+					"name" : "right_l",
+					"strict" : false
+				},
+				{
+					"name" : "left_l",
+					"strict" : false
+				},
+				{
+					"name" : "down_l",
+					"strict" : false
+				},
+				{
+					"name" : "up_l",
+					"strict" : false
+				},
+				{
 					"name" : "gpin0",
 					"strict" : false
 				},
@@ -41,6 +81,10 @@
 				},
 				{
 					"name" : "bpin3",
+					"strict" : false
+				},
+				{
+					"name" : "data",
 					"strict" : false
 				},
 				{

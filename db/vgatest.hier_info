@@ -1,8 +1,12 @@
-|vgatest
+|snake
 rpin0 <= rbus[0].DB_MAX_OUTPUT_PORT_TYPE
 clock => pll:pll.refclk
-clock => refresh_divider:inst8.clock
+clock => refresh_divider:snake_div.clock
 clock => snes_clock_divider:snes_div.clock
+clock => inst1.CLK
+clock => inst2.CLK
+clock => inst3.CLK
+clock => inst4.CLK
 data => snes_input:snes_in.data
 rpin1 <= rbus[1].DB_MAX_OUTPUT_PORT_TYPE
 rpin2 <= rbus[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -17,9 +21,19 @@ bpin2 <= bbus[2].DB_MAX_OUTPUT_PORT_TYPE
 bpin3 <= bbus[3].DB_MAX_OUTPUT_PORT_TYPE
 hs <= hsync.DB_MAX_OUTPUT_PORT_TYPE
 vs <= vga_controller:vga.v_sync
+right <= snes_input:snes_in.right
+left <= snes_input:snes_in.left
+down <= snes_input:snes_in.down
+up <= snes_input:snes_in.up
+dlatch <= snes_input:snes_in.dlatch
+dclock <= snes_input:snes_in.dclock
+right_l <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+left_l <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+down_l <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+up_l <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vgatest|vga_controller:vga
+|snake|vga_controller:vga
 clk => v_sync~reg0.CLK
 clk => h_sync~reg0.CLK
 clk => counterV[0].CLK
@@ -89,21 +103,21 @@ bin[2] => b.DATAB
 bin[3] => b.DATAB
 
 
-|vgatest|pll:pll
+|snake|pll:pll
 refclk => refclk.IN1
 rst => rst.IN1
 outclk_0 <= pll_0002:pll_inst.outclk_0
 locked <= pll_0002:pll_inst.locked
 
 
-|vgatest|pll:pll|pll_0002:pll_inst
+|snake|pll:pll|pll_0002:pll_inst
 refclk => refclk.IN1
 rst => rst.IN1
 outclk_0 <= altera_pll:altera_pll_i.outclk
 locked <= altera_pll:altera_pll_i.locked
 
 
-|vgatest|pll:pll|pll_0002:pll_inst|altera_pll:altera_pll_i
+|snake|pll:pll|pll_0002:pll_inst|altera_pll:altera_pll_i
 refclk => general[0].gpll.I_REFCLK
 refclk1 => ~NO_FANOUT~
 fbclk => ~NO_FANOUT~
@@ -275,64 +289,104 @@ cascade_out[0] <= <GND>
 zdbfbclk <> <GND>
 
 
-|vgatest|snake:snake
+|snake|snake_controller:inst
 screenX[0] => LessThan686.IN20
 screenX[0] => LessThan687.IN20
-screenX[0] => Div1.IN14
+screenX[0] => Div1.IN36
+screenX[0] => Div2.IN36
+screenX[0] => Div3.IN36
+screenX[0] => Div4.IN36
+screenX[0] => Div5.IN36
+screenX[0] => Div6.IN36
+screenX[0] => Div7.IN36
+screenX[0] => Div8.IN36
+screenX[0] => Div9.IN36
+screenX[0] => Div10.IN36
+screenX[0] => Div11.IN36
+screenX[0] => Div12.IN36
+screenX[0] => Div13.IN36
+screenX[0] => Div14.IN36
+screenX[0] => Div15.IN36
+screenX[0] => Div16.IN36
+screenX[0] => Div17.IN36
+screenX[0] => Div18.IN36
+screenX[0] => Div19.IN36
+screenX[0] => Div20.IN36
+screenX[0] => Div21.IN36
 screenX[1] => LessThan686.IN19
 screenX[1] => LessThan687.IN19
-screenX[1] => Div1.IN13
+screenX[1] => Div1.IN35
+screenX[1] => Div2.IN35
+screenX[1] => Div3.IN35
+screenX[1] => Div4.IN35
+screenX[1] => Div5.IN35
+screenX[1] => Div6.IN35
+screenX[1] => Div7.IN35
+screenX[1] => Div8.IN35
+screenX[1] => Div9.IN35
+screenX[1] => Div10.IN35
+screenX[1] => Div11.IN35
+screenX[1] => Div12.IN35
+screenX[1] => Div13.IN35
+screenX[1] => Div14.IN35
+screenX[1] => Div15.IN35
+screenX[1] => Div16.IN35
+screenX[1] => Div17.IN35
+screenX[1] => Div18.IN35
+screenX[1] => Div19.IN35
+screenX[1] => Div20.IN35
+screenX[1] => Div21.IN35
 screenX[2] => LessThan686.IN18
 screenX[2] => LessThan687.IN18
-screenX[2] => Div1.IN12
+screenX[2] => Add669.IN16
 screenX[3] => LessThan686.IN17
 screenX[3] => LessThan687.IN17
-screenX[3] => Div1.IN11
+screenX[3] => Add669.IN15
 screenX[4] => LessThan686.IN16
 screenX[4] => LessThan687.IN16
-screenX[4] => Div1.IN10
+screenX[4] => Add669.IN14
 screenX[5] => LessThan686.IN15
 screenX[5] => LessThan687.IN15
-screenX[5] => Div1.IN9
+screenX[5] => Add669.IN13
 screenX[6] => LessThan686.IN14
 screenX[6] => LessThan687.IN14
-screenX[6] => Div1.IN8
+screenX[6] => Add669.IN12
 screenX[7] => LessThan686.IN13
 screenX[7] => LessThan687.IN13
-screenX[7] => Div1.IN7
+screenX[7] => Add669.IN11
 screenX[8] => LessThan686.IN12
 screenX[8] => LessThan687.IN12
-screenX[8] => Div1.IN6
+screenX[8] => Add669.IN10
 screenX[9] => LessThan686.IN11
 screenX[9] => LessThan687.IN11
-screenX[9] => Div1.IN5
+screenX[9] => Add669.IN9
 screenY[0] => LessThan688.IN18
 screenY[0] => LessThan689.IN18
-screenY[0] => Div0.IN13
+screenY[0] => Div0.IN36
 screenY[1] => LessThan688.IN17
 screenY[1] => LessThan689.IN17
-screenY[1] => Div0.IN12
+screenY[1] => Div0.IN35
 screenY[2] => LessThan688.IN16
 screenY[2] => LessThan689.IN16
-screenY[2] => Div0.IN11
+screenY[2] => Add668.IN14
 screenY[3] => LessThan688.IN15
 screenY[3] => LessThan689.IN15
-screenY[3] => Div0.IN10
+screenY[3] => Add668.IN13
 screenY[4] => LessThan688.IN14
 screenY[4] => LessThan689.IN14
-screenY[4] => Div0.IN9
+screenY[4] => Add668.IN12
 screenY[5] => LessThan688.IN13
 screenY[5] => LessThan689.IN13
-screenY[5] => Div0.IN8
+screenY[5] => Add668.IN11
 screenY[6] => LessThan688.IN12
 screenY[6] => LessThan689.IN12
-screenY[6] => Div0.IN7
+screenY[6] => Add668.IN10
 screenY[7] => LessThan688.IN11
 screenY[7] => LessThan689.IN11
-screenY[7] => Div0.IN6
+screenY[7] => Add668.IN9
 screenY[8] => LessThan688.IN10
 screenY[8] => LessThan689.IN10
-screenY[8] => Div0.IN5
+screenY[8] => Add668.IN8
 refresh => headX[0].CLK
 refresh => headX[1].CLK
 refresh => headX[2].CLK
@@ -6982,7 +7036,7 @@ right_in => direction.OUTPUTSELECT
 right_in => direction.OUTPUTSELECT
 
 
-|vgatest|refresh_divider:inst8
+|snake|refresh_divider:snake_div
 clock => clear~reg0.CLK
 clock => counter[0].CLK
 clock => counter[1].CLK
@@ -7013,7 +7067,7 @@ rclock <= rclock~reg0.DB_MAX_OUTPUT_PORT_TYPE
 clear <= clear~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vgatest|snes_input:snes_in
+|snake|snes_input:snes_in
 clock => dclock.DATAB
 clock => state~2.DATAIN
 clock => b~reg0.CLK
@@ -7060,7 +7114,7 @@ data => l.DATAB
 data => r.DATAB
 
 
-|vgatest|snes_clock_divider:snes_div
+|snake|snes_clock_divider:snes_div
 clock => counter[0].CLK
 clock => counter[1].CLK
 clock => counter[2].CLK
