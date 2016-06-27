@@ -1,13 +1,13 @@
-Fitter Status : Successful - Sun Jun 26 18:58:23 2016
+Fitter Status : Successful - Sun Jun 26 23:48:46 2016
 Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 Revision Name : vgatest
 Top-level Entity Name : snake
 Family : Cyclone V
 Device : 5CEBA4F23C7
 Timing Models : Final
-Logic utilization (in ALMs) : 8,730 / 18,480 ( 47 % )
-Total registers : 8421
-Total pins : 28 / 224 ( 13 % )
+Logic utilization (in ALMs) : 15,145 / 18,480 ( 82 % )
+Total registers : 9369
+Total pins : 30 / 224 ( 13 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 3,153,920 ( 0 % )
 Total RAM Blocks : 0 / 308 ( 0 % )

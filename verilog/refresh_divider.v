@@ -6,7 +6,7 @@ output reg clear;
 
 reg[23:0] counter;
 
-localparam toggle = 24'd12500000;
+localparam toggle = 24'd5000000;
 
 always @(posedge clock)
 begin

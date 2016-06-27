@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Sun Jun 26 18:55:41 2016
+Analysis & Synthesis Status : Successful - Sun Jun 26 23:55:48 2016
 Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 Revision Name : vgatest
 Top-level Entity Name : snake
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 6981
-Total pins : 26
+Total registers : 7024
+Total pins : 28
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

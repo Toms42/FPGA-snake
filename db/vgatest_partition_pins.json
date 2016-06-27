@@ -4,6 +4,54 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "rpin0",
+					"strict" : false
+				},
+				{
+					"name" : "rpin1",
+					"strict" : false
+				},
+				{
+					"name" : "rpin2",
+					"strict" : false
+				},
+				{
+					"name" : "rpin3",
+					"strict" : false
+				},
+				{
+					"name" : "gpin0",
+					"strict" : false
+				},
+				{
+					"name" : "gpin1",
+					"strict" : false
+				},
+				{
+					"name" : "gpin2",
+					"strict" : false
+				},
+				{
+					"name" : "gpin3",
+					"strict" : false
+				},
+				{
+					"name" : "bpin0",
+					"strict" : false
+				},
+				{
+					"name" : "bpin1",
+					"strict" : false
+				},
+				{
+					"name" : "bpin2",
+					"strict" : false
+				},
+				{
+					"name" : "bpin3",
+					"strict" : false
+				},
+				{
 					"name" : "hs",
 					"strict" : false
 				},
@@ -52,35 +100,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "gpin0",
-					"strict" : false
-				},
-				{
-					"name" : "gpin1",
-					"strict" : false
-				},
-				{
-					"name" : "gpin2",
-					"strict" : false
-				},
-				{
-					"name" : "gpin3",
-					"strict" : false
-				},
-				{
-					"name" : "bpin0",
-					"strict" : false
-				},
-				{
-					"name" : "bpin1",
-					"strict" : false
-				},
-				{
-					"name" : "bpin2",
-					"strict" : false
-				},
-				{
-					"name" : "bpin3",
+					"name" : "dead",
 					"strict" : false
 				},
 				{
@@ -89,6 +109,10 @@
 				},
 				{
 					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "restart",
 					"strict" : false
 				}
 			]
