@@ -4,15 +4,43 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "rpin0",
+					"name" : "right",
 					"strict" : false
 				},
 				{
-					"name" : "rpin1",
+					"name" : "left",
 					"strict" : false
 				},
 				{
-					"name" : "rpin2",
+					"name" : "down",
+					"strict" : false
+				},
+				{
+					"name" : "up",
+					"strict" : false
+				},
+				{
+					"name" : "dlatch",
+					"strict" : false
+				},
+				{
+					"name" : "dclock",
+					"strict" : false
+				},
+				{
+					"name" : "right_l",
+					"strict" : false
+				},
+				{
+					"name" : "left_l",
+					"strict" : false
+				},
+				{
+					"name" : "down_l",
+					"strict" : false
+				},
+				{
+					"name" : "up_l",
 					"strict" : false
 				},
 				{
@@ -60,47 +88,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "right",
-					"strict" : false
-				},
-				{
-					"name" : "left",
-					"strict" : false
-				},
-				{
-					"name" : "down",
-					"strict" : false
-				},
-				{
-					"name" : "up",
-					"strict" : false
-				},
-				{
-					"name" : "dlatch",
-					"strict" : false
-				},
-				{
-					"name" : "dclock",
-					"strict" : false
-				},
-				{
-					"name" : "right_l",
-					"strict" : false
-				},
-				{
-					"name" : "left_l",
-					"strict" : false
-				},
-				{
-					"name" : "down_l",
-					"strict" : false
-				},
-				{
-					"name" : "up_l",
-					"strict" : false
-				},
-				{
 					"name" : "dead",
+					"strict" : false
+				},
+				{
+					"name" : "rpin0",
+					"strict" : false
+				},
+				{
+					"name" : "rpin1",
+					"strict" : false
+				},
+				{
+					"name" : "rpin2",
 					"strict" : false
 				},
 				{

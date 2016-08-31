@@ -1,4 +1,5 @@
 Warning (10268): Verilog HDL information at snake_controller.v(64): always construct contains both blocking and non-blocking assignments File: D:/0/quartus/snake/verilog/snake_controller.v Line: 64
-Warning (10268): Verilog HDL information at snake_controller.v(166): always construct contains both blocking and non-blocking assignments File: D:/0/quartus/snake/verilog/snake_controller.v Line: 166
+Warning (10268): Verilog HDL information at snake_controller.v(120): always construct contains both blocking and non-blocking assignments File: D:/0/quartus/snake/verilog/snake_controller.v Line: 120
+Warning (10268): Verilog HDL information at snake_controller.v(160): always construct contains both blocking and non-blocking assignments File: D:/0/quartus/snake/verilog/snake_controller.v Line: 160
 Warning (10268): Verilog HDL information at refresh_divider.v(11): always construct contains both blocking and non-blocking assignments File: D:/0/quartus/snake/verilog/refresh_divider.v Line: 11
 Warning (10268): Verilog HDL information at snes_input.v(58): always construct contains both blocking and non-blocking assignments File: D:/0/quartus/snake/verilog/snes_input.v Line: 58

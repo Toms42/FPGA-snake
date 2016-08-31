@@ -2,84 +2,212 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1100mV 85C Model Setup 'altera_reserved_tck'
-Slack : 10.412
+Type  : Slow 1100mV 85C Model Setup 'refresh_divider:snake_div|rclock'
+Slack : -9.726
+TNS   : -65625.208
+
+Type  : Slow 1100mV 85C Model Setup 'pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -8.824
+TNS   : -114.527
+
+Type  : Slow 1100mV 85C Model Setup 'clock'
+Slack : -3.682
+TNS   : -18.863
+
+Type  : Slow 1100mV 85C Model Setup 'snes_clock_divider:snes_div|sclock'
+Slack : -3.400
+TNS   : -28.489
+
+Type  : Slow 1100mV 85C Model Hold 'pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.379
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Hold 'altera_reserved_tck'
-Slack : 0.452
+Type  : Slow 1100mV 85C Model Hold 'clock'
+Slack : 0.444
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Recovery 'altera_reserved_tck'
-Slack : 30.307
+Type  : Slow 1100mV 85C Model Hold 'refresh_divider:snake_div|rclock'
+Slack : 0.460
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Removal 'altera_reserved_tck'
-Slack : 1.112
+Type  : Slow 1100mV 85C Model Hold 'snes_clock_divider:snes_div|sclock'
+Slack : 0.506
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 15.718
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'refresh_divider:snake_div|rclock'
+Slack : -0.538
+TNS   : -7621.334
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'snes_clock_divider:snes_div|sclock'
+Slack : -0.538
+TNS   : -10.848
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'pll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.666
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Setup 'altera_reserved_tck'
-Slack : 10.535
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : 9.167
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Hold 'altera_reserved_tck'
-Slack : 0.429
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 19.258
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Recovery 'altera_reserved_tck'
-Slack : 30.452
+Type  : Slow 1100mV 0C Model Setup 'refresh_divider:snake_div|rclock'
+Slack : -9.611
+TNS   : -63649.236
+
+Type  : Slow 1100mV 0C Model Setup 'pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -8.619
+TNS   : -111.434
+
+Type  : Slow 1100mV 0C Model Setup 'clock'
+Slack : -3.525
+TNS   : -16.832
+
+Type  : Slow 1100mV 0C Model Setup 'snes_clock_divider:snes_div|sclock'
+Slack : -3.414
+TNS   : -28.062
+
+Type  : Slow 1100mV 0C Model Hold 'clock'
+Slack : 0.082
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Removal 'altera_reserved_tck'
-Slack : 1.014
+Type  : Slow 1100mV 0C Model Hold 'pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.354
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 15.720
+Type  : Slow 1100mV 0C Model Hold 'refresh_divider:snake_div|rclock'
+Slack : 0.488
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Setup 'altera_reserved_tck'
-Slack : 13.621
+Type  : Slow 1100mV 0C Model Hold 'snes_clock_divider:snes_div|sclock'
+Slack : 0.499
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Hold 'altera_reserved_tck'
-Slack : 0.147
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'refresh_divider:snake_div|rclock'
+Slack : -0.538
+TNS   : -7435.837
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'snes_clock_divider:snes_div|sclock'
+Slack : -0.538
+TNS   : -10.847
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.666
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Recovery 'altera_reserved_tck'
-Slack : 31.467
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : 9.171
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Removal 'altera_reserved_tck'
-Slack : 0.482
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 19.177
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 15.736
+Type  : Fast 1100mV 85C Model Setup 'refresh_divider:snake_div|rclock'
+Slack : -5.096
+TNS   : -33018.675
+
+Type  : Fast 1100mV 85C Model Setup 'pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -4.392
+TNS   : -57.375
+
+Type  : Fast 1100mV 85C Model Setup 'clock'
+Slack : -2.699
+TNS   : -11.796
+
+Type  : Fast 1100mV 85C Model Setup 'snes_clock_divider:snes_div|sclock'
+Slack : -1.291
+TNS   : -10.706
+
+Type  : Fast 1100mV 85C Model Hold 'refresh_divider:snake_div|rclock'
+Slack : 0.180
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Setup 'altera_reserved_tck'
-Slack : 13.937
+Type  : Fast 1100mV 85C Model Hold 'pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.181
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Hold 'altera_reserved_tck'
-Slack : 0.120
+Type  : Fast 1100mV 85C Model Hold 'clock'
+Slack : 0.182
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Recovery 'altera_reserved_tck'
-Slack : 31.643
+Type  : Fast 1100mV 85C Model Hold 'snes_clock_divider:snes_div|sclock'
+Slack : 0.236
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Removal 'altera_reserved_tck'
-Slack : 0.415
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'refresh_divider:snake_div|rclock'
+Slack : 0.085
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 15.767
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'snes_clock_divider:snes_div|sclock'
+Slack : 0.109
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.666
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : 9.158
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 19.548
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'refresh_divider:snake_div|rclock'
+Slack : -4.369
+TNS   : -28344.137
+
+Type  : Fast 1100mV 0C Model Setup 'pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -3.809
+TNS   : -49.173
+
+Type  : Fast 1100mV 0C Model Setup 'clock'
+Slack : -2.257
+TNS   : -9.189
+
+Type  : Fast 1100mV 0C Model Setup 'snes_clock_divider:snes_div|sclock'
+Slack : -1.142
+TNS   : -9.604
+
+Type  : Fast 1100mV 0C Model Hold 'clock'
+Slack : 0.009
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.047
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'refresh_divider:snake_div|rclock'
+Slack : 0.170
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'snes_clock_divider:snes_div|sclock'
+Slack : 0.237
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'refresh_divider:snake_div|rclock'
+Slack : 0.129
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'snes_clock_divider:snes_div|sclock'
+Slack : 0.130
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'pll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.666
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : 9.164
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 19.543
 TNS   : 0.000
 
 ------------------------------------------------------------

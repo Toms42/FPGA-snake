@@ -63,35 +63,6 @@ reg[4:0] y=0;
 //move snake AND handle collisions:
 always @(posedge refresh)
 begin
-	if(restart==0)
-		begin
-			if(snakeCounters[headY][headX]>0 || headY>=height || headX>=width)
-			begin
-				dead<=1'b1;
-			end
-		end
-	else if(restart==1)
-	begin
-		dead<=1'b0;
-		length<=1;
-	end
-
-	if(headY==realfoodY && headX==realfoodX)
-	begin
-		realfoodX=goodfoodX;
-		realfoodY=goodfoodY;
-
-		for(x=0;x<width;x=x+1)
-		begin
-			for(y=0;y<height;y=y+1)
-			begin
-				if(snakeCounters[y][x]>0)
-					snakeCounters[y][x]<=snakeCounters[y][x]+1;
-			end
-		end
-
-		length<=length+1;
-	end
 
 	if(dead)
 	begin
@@ -144,6 +115,29 @@ begin
 		endcase
 	end
 
+end
+
+always @(posedge refresh)
+begin
+	if(restart==0)
+		begin
+			if((snakeCounters[headY][headX]>0 && snakeCounters[headY][headX]<length-1) || headY>=height || headX>=width)
+			begin
+				dead<=1'b1;
+			end
+		end
+	else if(restart==1)
+	begin
+		dead<=1'b0;
+		length<=1;
+	end
+
+	if(headY==realfoodY && headX==realfoodX)
+	begin
+		realfoodX=goodfoodX;
+		realfoodY=goodfoodY;
+		length<=length+1;
+	end
 end
 
 //update direction:
